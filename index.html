@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hiteshi Kadian - Computer Organisation and Architecture (COA) Academic Portfolio and Learning Tools. Explore number system conversions and multi-address instruction generation.">
+  <title>Hiteshi Kadian | COA Learning Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Mobile Top Bar with Hamburger -->
+  <header class="mobile-header" id="mobileHeader">
+    <div class="mobile-brand">
+      <span class="brand-symbol">⚡</span>
+      <span class="brand-title">Hiteshi Kadian</span>
+    </div>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </header>
+
+  <!-- Sidebar Overlay for Mobile -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <div class="app-layout">
+    <!-- Left Fixed Vertical Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-avatar-wrap">
+          <img src="assets/profile/profile.png" alt="Hiteshi Kadian" class="sidebar-avatar">
+          <span class="online-indicator" title="Active Student"></span>
+        </div>
+        <div class="sidebar-profile-info">
+          <h2 class="sidebar-name">Hiteshi Kadian</h2>
+          <p class="sidebar-subtitle">Computer Organisation &amp; Architecture</p>
+          <span class="sidebar-badge">UID: 25BAI10014</span>
+        </div>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="sidebar-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active" data-section="home">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+              <span class="nav-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-section="about">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+              <span class="nav-text">About Me</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#tools" class="nav-link" data-section="tools">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+                <rect x="9" y="9" width="6" height="6"/>
+                <line x1="9" y1="1" x2="9" y2="4"/>
+                <line x1="15" y1="1" x2="15" y2="4"/>
+                <line x1="9" y1="20" x2="9" y2="23"/>
+                <line x1="15" y1="20" x2="15" y2="23"/>
+                <line x1="20" y1="9" x2="23" y2="9"/>
+                <line x1="20" y1="14" x2="23" y2="14"/>
+                <line x1="1" y1="9" x2="4" y2="9"/>
+                <line x1="1" y1="14" x2="4" y2="14"/>
+              </svg>
+              <span class="nav-text">COA Learning Tools</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link" data-section="gallery">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
+                <circle cx="9" cy="9" r="2"/>
+                <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+              </svg>
+              <span class="nav-text">Gallery</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#assignment" class="nav-link" data-section="assignment">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+              <span class="nav-text">Assignment-1</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Footer -->
+      <div class="sidebar-footer">
+        <div class="uni-card">
+          <div class="uni-icon">🎓</div>
+          <div class="uni-text">
+            <strong>Chandigarh University</strong>
+            <span>BE CSE (AI) • 2025–2029</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Scrollable Content Area -->
+    <main class="main-content" id="mainContent">
+
+      <!-- ==============================================
+           SECTION 1: HOME
+      =============================================== -->
+      <section id="home" class="page-section hero-section active-section">
+        <div class="hero-container">
+          <div class="hero-left">
+            <div class="hero-greeting-pill">
+              <span class="pill-dot"></span> Academic Portfolio &amp; Learning Hub
+            </div>
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Hiteshi Kadian</span>
+            </h1>
+            <h2 class="hero-role">Computer Science Engineering (AI) Student</h2>
+            <p class="hero-course-tag">Subject: <strong>Computer Organisation and Architecture</strong></p>
+
+            <p class="hero-lead">
+              Welcome to my Computer Organisation and Architecture learning portfolio. Designed for interactive study, exploring CPU architectures, instruction formatting, and digital number representation.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#tools" class="btn btn-primary" id="heroExploreToolsBtn">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Explore COA Tools
+              </a>
+              <a href="#about" class="btn btn-secondary" id="heroAboutBtn">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                About Me
+              </a>
+              <a href="assets/assignment/COA_Assignment_1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Assignment-1 PDF
+              </a>
+            </div>
+
+            <!-- Quick Facts Card -->
+            <div class="quick-facts-card">
+              <div class="card-heading">
+                <span class="badge-icon">📌</span>
+                <h3>Quick Academic Facts</h3>
+              </div>
+              <div class="quick-facts-grid">
+                <div class="fact-item">
+                  <span class="fact-label">Full Name</span>
+                  <span class="fact-val">Hiteshi Kadian</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Student UID</span>
+                  <span class="fact-val highlight-val">25BAI10014</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Branch &amp; Specialization</span>
+                  <span class="fact-val">BE CSE (Artificial Intelligence)</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Subject</span>
+                  <span class="fact-val">Computer Organisation and Architecture</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">University</span>
+                  <span class="fact-val">Chandigarh University, Punjab</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Academic Standing</span>
+                  <span class="fact-val highlight-val">CGPA: 9.67 (Sem 1: 9.65 | Sem 2: 9.70)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Right: Profile Photo -->
+          <div class="hero-right">
+            <div class="profile-card-wrapper">
+              <div class="profile-image-container">
+                <img src="assets/profile/profile.png" alt="Hiteshi Kadian - Profile Photo" class="profile-img">
+              </div>
+              <div class="profile-meta-footer">
+                <div class="meta-tag">
+                  <span class="meta-icon">📍</span> Chandigarh, Punjab
+                </div>
+                <div class="meta-tag">
+                  <span class="meta-icon">💻</span> C++, Python, Computer Systems
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           SECTION 2: ABOUT ME
+      =============================================== -->
+      <section id="about" class="page-section">
+        <div class="section-header">
+          <div class="section-tag">Biography &amp; Background</div>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Academic interests, education, technical skills, and verified projects from my resume.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Card A: Introduction -->
+          <div class="info-card intro-card span-2">
+            <div class="card-icon-title">
+              <span class="card-icon">👋</span>
+              <h3>Introduction</h3>
+            </div>
+            <p class="card-text">
+              I am a motivated <strong>Computer Science Engineering student specializing in Artificial Intelligence</strong> at Chandigarh University with a deep interest in Artificial Intelligence, Machine Learning, Computer Vision, and practical computer systems. I focus on bridging theoretical foundation in data structures, algorithms, and computer organisation with hands-on software development to create impactful, real-world solutions.
+            </p>
+            <div class="card-footer-action">
+              <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="12" y2="12"/><line x1="15" y1="15" x2="12" y2="12"/></svg>
+                View Full Resume (PDF)
+              </a>
+            </div>
+          </div>
+
+          <!-- Card B: Academic Interests -->
+          <div class="info-card">
+            <div class="card-icon-title">
+              <span class="card-icon">🧠</span>
+              <h3>Academic Interests</h3>
+            </div>
+            <ul class="interest-list">
+              <li>
+                <span class="bullet-dot"></span>
+                <div>
+                  <strong>Artificial Intelligence &amp; ML</strong>
+                  <p>Model architectures, predictive analytics, and algorithmic decision systems.</p>
+                </div>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <div>
+                  <strong>Computer Vision &amp; Applied AI</strong>
+                  <p>Visual feature representation, pattern recognition, and real-time inference.</p>
+                </div>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <div>
+                  <strong>Data Structures &amp; Algorithms</strong>
+                  <p>Algorithmic optimization and 100+ solved problems across key problem sets.</p>
+                </div>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <div>
+                  <strong>Computer Systems &amp; Architecture</strong>
+                  <p>Instruction set design, CPU pipelining, memory hierarchies, and addressing modes.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card C: Future Goals -->
+          <div class="info-card">
+            <div class="card-icon-title">
+              <span class="card-icon">🎯</span>
+              <h3>Future Goals</h3>
+            </div>
+            <p class="card-text">
+              Directly aligned with my career objective:
+            </p>
+            <div class="goals-timeline">
+              <div class="goal-step">
+                <span class="goal-number">01</span>
+                <div>
+                  <strong>Practical Industry Experience</strong>
+                  <p>Seeking technical internships to apply machine learning, software engineering, and systems knowledge in production environments.</p>
+                </div>
+              </div>
+              <div class="goal-step">
+                <span class="goal-number">02</span>
+                <div>
+                  <strong>Applied ML &amp; Vision Research</strong>
+                  <p>Exploring foundational and applied research at the intersection of computer vision, computer systems, and intelligent agents.</p>
+                </div>
+              </div>
+              <div class="goal-step">
+                <span class="goal-number">03</span>
+                <div>
+                  <strong>Meaningful AI-Driven Solutions</strong>
+                  <p>Contributing to secure, scalable, and socially beneficial AI applications that address authentic real-world challenges.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card D: Education -->
+          <div class="info-card span-2">
+            <div class="card-icon-title">
+              <span class="card-icon">🎓</span>
+              <h3>Academic Background &amp; Education</h3>
+            </div>
+            <div class="education-grid">
+              <div class="edu-item">
+                <div class="edu-badge">2025 – 2029</div>
+                <h4>Bachelor of Engineering (Hons.) in Computer Science &amp; Engineering</h4>
+                <div class="edu-meta">Artificial Intelligence Specialization • Chandigarh University, Gharuan, Punjab</div>
+                <div class="grade-pill">Cumulative CGPA: <strong>9.67</strong> (Sem 1: 9.65 | Sem 2: 9.70)</div>
+                <p class="edu-desc">Core coursework in Computer Organisation &amp; Architecture, Data Structures &amp; Algorithms, Digital Electronics, AI Fundamentals, and Mathematics.</p>
+              </div>
+
+              <div class="edu-item">
+                <div class="edu-badge">2024 – 2025</div>
+                <h4>Senior Secondary Education (Class XII - Science Stream)</h4>
+                <div class="edu-meta">C.R. Sr. Sec. School, Jhajjar, Haryana • HBSE Board</div>
+                <div class="grade-pill topper-pill">State Topper • Percentage: <strong>98.6%</strong></div>
+                <p class="edu-desc">Completed Senior Secondary Education under the HBSE Board with 98.6% and recognized as State Topper in the Science Stream.</p>
+              </div>
+
+              <div class="edu-item">
+                <div class="edu-badge">2022 – 2023</div>
+                <h4>Secondary Education (Class X)</h4>
+                <div class="edu-meta">C.R. Sr. Sec. School, Jhajjar, Haryana • HBSE Board</div>
+                <div class="grade-pill">Percentage: <strong>98.2%</strong></div>
+                <p class="edu-desc">Distinction in Mathematics, Science, and Social Sciences.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card E: Technical Skills -->
+          <div class="info-card span-2">
+            <div class="card-icon-title">
+              <span class="card-icon">🛠️</span>
+              <h3>Technical Skills &amp; Proficiencies</h3>
+            </div>
+            <div class="skills-categories-grid">
+              <div class="skill-category">
+                <span class="cat-title">Languages &amp; Frameworks</span>
+                <div class="skill-chips">
+                  <span class="chip">C++</span>
+                  <span class="chip">Python</span>
+                  <span class="chip">C</span>
+                  <span class="chip">JavaScript</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <span class="cat-title">Core Computer Science</span>
+                <div class="skill-chips">
+                  <span class="chip">Computer Organisation &amp; Architecture</span>
+                  <span class="chip">Data Structures &amp; Algorithms (100+ LeetCode)</span>
+                  <span class="chip">Machine Learning</span>
+                  <span class="chip">Object-Oriented Programming (OOP)</span>
+                  <span class="chip">Natural Language Processing</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <span class="cat-title">Development Tools &amp; Cloud</span>
+                <div class="skill-chips">
+                  <span class="chip">Microsoft Azure</span>
+                  <span class="chip">GitHub &amp; Git</span>
+                  <span class="chip">GitHub Copilot</span>
+                  <span class="chip">SQL</span>
+                  <span class="chip">VS Code</span>
+                  <span class="chip">Render</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <span class="cat-title">Interpersonal &amp; Professional</span>
+                <div class="skill-chips">
+                  <span class="chip">Teamwork &amp; Collaboration</span>
+                  <span class="chip">Time Management</span>
+                  <span class="chip">Adaptability</span>
+                  <span class="chip">Active Listening</span>
+                  <span class="chip">Calm under Pressure</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card F: Projects -->
+          <div class="info-card span-2">
+            <div class="card-icon-title">
+              <span class="card-icon">🚀</span>
+              <h3>Featured Projects</h3>
+            </div>
+            <div class="projects-grid">
+              <!-- Project 1 -->
+              <div class="project-card highlight-border">
+                <div class="project-header">
+                  <div>
+                    <span class="project-date">August 2026</span>
+                    <h4 class="project-title">Instruction Set Simulator</h4>
+                  </div>
+                  <span class="project-badge">COA Focused</span>
+                </div>
+                <div class="project-tech">C++ • Data Structures • Infix/Postfix Stacks • GitHub</div>
+                <p class="project-desc">
+                  Built a console-based Instruction Set Simulator that converts arithmetic expressions into 3-address, 2-address, 1-address, and 0-address instruction formats. Implemented expression validation, infix-to-postfix conversion using stacks, and automatic code generation for computer organization concepts following a modular programming approach.
+                </p>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="project-card">
+                <div class="project-header">
+                  <div>
+                    <span class="project-date">July 2026</span>
+                    <h4 class="project-title">PQC Algorithm Recommendation System</h4>
+                  </div>
+                  <span class="project-badge">AI / Cryptography</span>
+                </div>
+                <div class="project-tech">Flask • Python • XGBoost • OneHotEncoder • Render</div>
+                <p class="project-desc">
+                  Developed a web-based decision support system recommending NIST-standardized Post-Quantum Cryptography (PQC) algorithms based on security, performance, memory, and application requirements. Trained and deployed an XGBoost ML model integrated into a Flask app with automated preprocessing.
+                </p>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="project-card">
+                <div class="project-header">
+                  <div>
+                    <span class="project-date">April 2026</span>
+                    <h4 class="project-title">PhishGuard AI — Real-Time Phishing Detection</h4>
+                  </div>
+                  <span class="project-badge">Cybersecurity AI</span>
+                </div>
+                <div class="project-tech">Python • Flask • Machine Learning • Chrome Extension • HTML/JS</div>
+                <p class="project-desc">
+                  Built a full-stack cybersecurity system that detects phishing URLs in real time using a Machine Learning model. Developed a Chrome Extension for browser protection that flags malicious URLs as users browse, coupled with automated email alerts upon threat detection.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           SECTION 3: COA LEARNING TOOLS
+      =============================================== -->
+      <section id="tools" class="page-section">
+
+        <!-- Selection Landing Page -->
+        <div class="tool-selection-view" id="toolSelectionView">
+          <div class="section-header">
+            <div class="section-tag">Interactive Computer Architecture</div>
+            <h2 class="section-title">COA Learning Tools</h2>
+            <p class="section-subtitle">Select a tool to begin learning and practicing.</p>
+          </div>
+
+          <div class="tool-selection-grid">
+            <!-- Tool 1 Card -->
+            <div class="tool-select-card" id="selectCardConverter">
+              <div class="tool-select-top">
+                <span class="tool-badge-number">Tool 01</span>
+                <span class="tool-select-icon">🔢</span>
+              </div>
+              <h3 class="tool-select-title">Number System Converter</h3>
+              <p class="tool-select-desc">Convert numbers between Decimal, Binary, Octal and Hexadecimal.</p>
+              <button type="button" class="btn btn-primary btn-open-tool" id="openConverterBtn">
+                Open Tool
+              </button>
+            </div>
+
+            <!-- Tool 2 Card -->
+            <div class="tool-select-card" id="selectCardInstruction">
+              <div class="tool-select-top">
+                <span class="tool-badge-number">Tool 02</span>
+                <span class="tool-select-icon">⚙️</span>
+              </div>
+              <h3 class="tool-select-title">Address Instruction Generator</h3>
+              <p class="tool-select-desc">Generate 0-address, 1-address, 2-address and 3-address instructions from arithmetic expressions.</p>
+              <button type="button" class="btn btn-primary btn-open-tool" id="openInstructionBtn">
+                Open Tool
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOOL 1: NUMBER SYSTEM CONVERTER VIEW -->
+        <div class="tool-detail-view hidden" id="converterToolView">
+          <div class="tool-back-bar">
+            <button type="button" class="btn btn-secondary btn-sm back-to-tools-btn" id="backFromConverterBtn">
+              ← Back to COA Tools
+            </button>
+          </div>
+          <div class="tool-card" id="converterTool">
+            <div class="tool-card-header">
+              <div class="tool-title-group">
+                <span class="tool-badge-number">Tool 01</span>
+                <div>
+                  <h3 class="tool-title">Number System Converter</h3>
+                  <p class="tool-subtitle">Convert values dynamically between Decimal, Binary, Octal, and Hexadecimal representations.</p>
+                </div>
+              </div>
+              <span class="coa-concept-pill">Radix / Base Conversion</span>
+            </div>
+
+            <div class="tool-body">
+              <div class="converter-grid">
+                <!-- Source System -->
+                <div class="converter-panel">
+                  <div class="panel-header">
+                    <label for="inputBaseSelect" class="panel-label">Input Number System</label>
+                    <div class="select-wrapper">
+                      <select id="inputBaseSelect" class="form-select">
+                        <option value="10" selected>Decimal (Base 10)</option>
+                        <option value="2">Binary (Base 2)</option>
+                        <option value="8">Octal (Base 8)</option>
+                        <option value="16">Hexadecimal (Base 16)</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="input-wrapper">
+                    <input 
+                      type="text" 
+                      id="converterInput" 
+                      class="form-control" 
+                      placeholder="e.g. 25" 
+                      autocomplete="off" 
+                      spellcheck="false"
+                      aria-label="Input number value"
+                    >
+                    <button type="button" class="input-clear-btn" id="clearInputBtn" title="Clear input">✕</button>
+                  </div>
+                  <div class="helper-text" id="inputHelperText">
+                    Allowed characters: <strong>0–9</strong>
+                  </div>
+                </div>
+
+                <!-- Swap and Action Controls -->
+                <div class="converter-controls">
+                  <button type="button" class="btn btn-swap" id="swapBasesBtn" title="Swap input and output bases" aria-label="Swap bases">
+                    <svg class="swap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 16V4M7 4L3 8M7 4L11 8M17 8V20M17 20L21 16M17 20L13 16"/>
+                    </svg>
+                    <span>Swap Bases</span>
+                  </button>
+                </div>
+
+                <!-- Target System -->
+                <div class="converter-panel">
+                  <div class="panel-header">
+                    <label for="outputBaseSelect" class="panel-label">Output Number System</label>
+                    <div class="select-wrapper">
+                      <select id="outputBaseSelect" class="form-select">
+                        <option value="10">Decimal (Base 10)</option>
+                        <option value="2" selected>Binary (Base 2)</option>
+                        <option value="8">Octal (Base 8)</option>
+                        <option value="16">Hexadecimal (Base 16)</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="input-wrapper">
+                    <input 
+                      type="text" 
+                      id="converterOutput" 
+                      class="form-control output-control" 
+                      placeholder="Result will appear here..." 
+                      readonly
+                      aria-label="Converted result"
+                    >
+                    <button type="button" class="copy-btn" id="copyResultBtn" title="Copy result to clipboard">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="helper-text" id="outputHelperText">
+                    Target radix representation
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="converter-actions">
+                <button type="button" class="btn btn-primary" id="convertBtn">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+                  Convert
+                </button>
+                <button type="button" class="btn btn-secondary" id="clearConverterBtn">
+                  Clear
+                </button>
+                <!-- Quick preset chips -->
+                <div class="preset-chips">
+                  <span class="chips-label">Quick test:</span>
+                  <button type="button" class="chip-btn" data-base="10" data-val="25">25 (Dec)</button>
+                  <button type="button" class="chip-btn" data-base="10" data-val="255">255 (Dec)</button>
+                  <button type="button" class="chip-btn" data-base="2" data-val="110101">110101 (Bin)</button>
+                  <button type="button" class="chip-btn" data-base="16" data-val="1A3F">1A3F (Hex)</button>
+                  <button type="button" class="chip-btn" data-base="8" data-val="755">755 (Oct)</button>
+                </div>
+              </div>
+
+              <!-- Error Message Display -->
+              <div class="error-banner hidden" id="converterError" role="alert">
+                <span class="error-icon">⚠️</span>
+                <span class="error-msg" id="converterErrorMsg">Invalid input</span>
+              </div>
+
+              <!-- Step-by-Step Toggle Trigger Button -->
+              <div class="steps-toggle-container hidden" id="stepsToggleContainer">
+                <button type="button" class="btn btn-show-steps" id="toggleStepsBtn">
+                  <span class="steps-btn-icon" id="toggleStepsIcon">📖</span>
+                  <span id="toggleStepsText">Show Conversion Steps</span>
+                </button>
+              </div>
+
+              <!-- Step-by-Step Conversion Breakdown Card -->
+              <div class="conversion-steps-card hidden" id="conversionStepsCard">
+                <div class="steps-card-header">
+                  <div class="steps-header-title">
+                    <span class="steps-badge">Step-by-Step</span>
+                    <h4 class="steps-title">Conversion Steps</h4>
+                  </div>
+                  <span class="steps-route-pill" id="stepsRoutePill">Decimal (10) → Binary (2)</span>
+                </div>
+                <div class="steps-body" id="stepsBody">
+                  <!-- Dynamically rendered Step 1, Step 2, Step 3, Final Result -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOOL 2: ADDRESS INSTRUCTION GENERATOR VIEW -->
+        <div class="tool-detail-view hidden" id="instructionToolView">
+          <div class="tool-back-bar">
+            <button type="button" class="btn btn-secondary btn-sm back-to-tools-btn" id="backFromInstructionBtn">
+              ← Back to COA Tools
+            </button>
+          </div>
+          <div class="tool-card" id="instructionTool">
+            <div class="tool-card-header">
+              <div class="tool-title-group">
+                <span class="tool-badge-number">Tool 02</span>
+                <div>
+                  <h3 class="tool-title">Address Instruction Generator</h3>
+                  <p class="tool-subtitle">Generate 3-address, 2-address, 1-address (Accumulator), and 0-address (Stack) instructions from arithmetic expressions.</p>
+                </div>
+              </div>
+              <span class="coa-concept-pill">Instruction Set Architecture (ISA)</span>
+            </div>
+
+            <div class="tool-body">
+              <div class="generator-input-grid">
+                <!-- Expression Input -->
+                <div class="form-group span-2">
+                  <label for="exprInput" class="form-label">
+                    Arithmetic Infix Expression
+                    <span class="label-hint">Supports +, -, *, /, ^, parentheses &amp; identifiers</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <input 
+                      type="text" 
+                      id="exprInput" 
+                      class="form-control code-font" 
+                      value="(A+B)*(C+D)" 
+                      placeholder="e.g. (A+B)*(C+D)" 
+                      autocomplete="off" 
+                      spellcheck="false"
+                    >
+                    <button type="button" class="input-clear-btn" id="clearExprBtn" title="Clear expression">✕</button>
+                  </div>
+                </div>
+
+                <!-- Target Architecture Dropdown -->
+                <div class="form-group">
+                  <label for="archSelect" class="form-label">Target Architecture Format</label>
+                  <div class="select-wrapper">
+                    <select id="archSelect" class="form-select">
+                      <option value="all" selected>All Formats (Comparison View)</option>
+                      <option value="3">3-Address (Register Architecture)</option>
+                      <option value="2">2-Address (Destination-as-Source)</option>
+                      <option value="1">1-Address (Accumulator Architecture)</option>
+                      <option value="0">0-Address (Stack-based Architecture)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Destination Variable -->
+                <div class="form-group">
+                  <label for="destVarInput" class="form-label">
+                    Target Memory / Variable
+                    <span class="label-hint">Final stored variable</span>
+                  </label>
+                  <input type="text" id="destVarInput" class="form-control code-font" value="X" maxlength="8">
+                </div>
+              </div>
+
+              <!-- Quick Presets -->
+              <div class="preset-expressions">
+                <span class="chips-label">Try standard textbook expressions:</span>
+                <button type="button" class="expr-chip active" data-expr="(A+B)*(C+D)">(A+B)*(C+D)</button>
+                <button type="button" class="expr-chip" data-expr="A+B">A+B</button>
+                <button type="button" class="expr-chip" data-expr="A-B">A-B</button>
+                <button type="button" class="expr-chip" data-expr="A*B+C">A*B+C</button>
+                <button type="button" class="expr-chip" data-expr="(A+B)*C">(A+B)*C</button>
+                <button type="button" class="expr-chip" data-expr="A*(B+C)-D">A*(B+C)-D</button>
+                <button type="button" class="expr-chip" data-expr="(A+B)/(C-D)">(A+B)/(C-D)</button>
+              </div>
+
+              <!-- Generator Buttons -->
+              <div class="generator-actions">
+                <button type="button" class="btn btn-primary" id="generateInstructionsBtn">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                  Generate Instructions
+                </button>
+                <button type="button" class="btn btn-secondary" id="clearGeneratorBtn">
+                  Clear
+                </button>
+              </div>
+
+              <!-- Generator Error -->
+              <div class="error-banner hidden" id="generatorError" role="alert">
+                <span class="error-icon">⚠️</span>
+                <span class="error-msg" id="generatorErrorMsg">Invalid expression</span>
+              </div>
+
+              <!-- Parsed Expression Insights -->
+              <div class="parsed-expression-summary" id="parsedExprSummary">
+                <div class="parsed-item">
+                  <span class="parsed-label">Infix Expression:</span>
+                  <code class="parsed-val" id="parsedInfix">(A+B)*(C+D)</code>
+                </div>
+                <div class="parsed-item">
+                  <span class="parsed-label">Postfix (Reverse Polish) Notation:</span>
+                  <code class="parsed-val highlight-postfix" id="parsedPostfix">A B + C D + *</code>
+                </div>
+              </div>
+
+              <!-- Output Display Panels -->
+              <div class="instruction-output-container" id="instructionOutputArea">
+                <!-- Dynamically injected or updated via JS -->
+              </div>
+
+              <!-- Execution Visualizer Trigger Button -->
+              <div class="visualize-trigger-container hidden" id="visualizeTriggerContainer">
+                <button type="button" class="btn btn-visualize" id="startVisualizerBtn">
+                  <span class="btn-play-icon">▶</span>
+                  <span>Visualize Execution</span>
+                </button>
+              </div>
+
+              <!-- Interactive Visual Execution Simulator -->
+              <div class="visual-execution-container hidden" id="visualExecutionContainer">
+                <div class="visual-sim-card">
+                  <!-- Simulator Header -->
+                  <div class="sim-header">
+                    <div class="sim-title-group">
+                      <span class="sim-badge">Hardware Simulator</span>
+                      <h4 class="sim-title">Interactive Step-by-Step Execution</h4>
+                    </div>
+                    <!-- Architecture switcher tabs -->
+                    <div class="sim-arch-switcher" id="simArchSwitcher">
+                      <!-- Rendered dynamically -->
+                    </div>
+                  </div>
+
+                  <!-- Dedicated Current Architecture Banner -->
+                  <div class="sim-current-arch-banner">
+                    <span class="sim-arch-banner-label">Current Architecture:</span>
+                    <strong class="sim-arch-banner-name" id="simCurrentArchDisplay">3-Address</strong>
+                  </div>
+
+                  <!-- Simulator Meta & Progress Bar -->
+                  <div class="sim-meta-bar">
+                    <div class="sim-meta-item">
+                      <span class="sim-meta-lbl">Expression:</span>
+                      <span class="sim-meta-val" id="simExprDisplay">(A+B)*(C+D)</span>
+                    </div>
+                    <div class="sim-meta-item">
+                      <span class="sim-meta-lbl">Target:</span>
+                      <span class="sim-meta-val highlight-val" id="simTargetDisplay">X</span>
+                    </div>
+                    <div class="sim-step-indicator" id="simStepIndicator">
+                      Step 1 of 3
+                    </div>
+                  </div>
+                  <div class="sim-progress-track">
+                    <div class="sim-progress-fill" id="simProgressFill" style="width: 33.3%;"></div>
+                  </div>
+
+                  <!-- Prominent Active Instruction Hero Box -->
+                  <div class="sim-instruction-hero">
+                    <div class="sim-hero-top">
+                      <span class="sim-hero-badge" id="simHeroBadge">Current Instruction: Step 1</span>
+                      <span class="sim-hero-format-tag" id="simHeroFormatTag">3-Address Format</span>
+                    </div>
+                    <div class="sim-hero-code" id="simHeroCode">
+                      <span class="sim-hero-opcode" id="simHeroOpcode">ADD</span>
+                      <span class="sim-hero-operand" id="simHeroOperand">R1, A, B</span>
+                    </div>
+                    <div class="sim-hero-meaning" id="simHeroMeaning">
+                      <span class="meaning-arrow">↳</span> Semantic Operation: <code id="simSemanticCode">R1 = A + B</code>
+                    </div>
+                  </div>
+
+                  <!-- Visual Data Flow Diagram -->
+                  <div class="sim-dataflow-section">
+                    <div class="sim-sub-heading">
+                      <span>⚡ Data Flow &amp; ALU Operation</span>
+                    </div>
+                    <div class="sim-dataflow-canvas" id="simDataflowCanvas">
+                      <!-- Dynamically rendered dataflow visual -->
+                    </div>
+                  </div>
+
+                  <!-- Architecture Hardware State Panel -->
+                  <div class="sim-hardware-section">
+                    <div class="sim-sub-heading">
+                      <span id="simHardwareTitle">🎛️ REGISTER FILE</span>
+                      <span class="sim-sub-note" id="simHardwareNote">General Purpose Registers</span>
+                    </div>
+                    <div class="sim-hardware-board" id="simHardwareBoard">
+                      <!-- Dynamically rendered registers, accumulator or stack -->
+                    </div>
+                  </div>
+
+                  <!-- Beginner-Friendly Explanation Card -->
+                  <div class="sim-explanation-card" id="simExplanationCard">
+                    <div class="sim-exp-header">
+                      <span class="sim-exp-icon">💡</span>
+                      <span class="sim-exp-title">What is happening in this step?</span>
+                    </div>
+                    <p class="sim-exp-text" id="simExpText">
+                      The CPU evaluates the operation and updates the state.
+                    </p>
+                    <div class="sim-viva-tip" id="simVivaTip">
+                      <strong>Viva Insight:</strong> In this architecture format, operations follow specific hardware rules.
+                    </div>
+                  </div>
+
+                  <!-- Execution Complete Banner (shows on last step) -->
+                  <div class="sim-complete-banner hidden" id="simCompleteBanner">
+                    <div class="complete-icon">✓</div>
+                    <div class="complete-text">
+                      <h5>Execution Complete!</h5>
+                      <p id="simCompleteMsg">The expression has been completely evaluated and the final result is preserved in target variable <strong id="simCompleteTarget">X</strong>.</p>
+                    </div>
+                  </div>
+
+                  <!-- Simulator Playback Controls -->
+                  <div class="sim-controls-bar">
+                    <button type="button" class="btn btn-sim-ctl" id="simPrevBtn" title="Previous Step">
+                      <span>⏮</span> Previous
+                    </button>
+                    <button type="button" class="btn btn-sim-play" id="simPlayBtn" title="Play or Pause Sequential Execution">
+                      <span id="simPlayIcon">▶</span> <span id="simPlayText">Auto Play</span>
+                    </button>
+                    <button type="button" class="btn btn-sim-ctl" id="simNextBtn" title="Next Step">
+                      Next <span>⏭</span>
+                    </button>
+                    <button type="button" class="btn btn-sim-reset" id="simResetBtn" title="Reset to First Step">
+                      <span>↻</span> Reset
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Comprehensive Architecture Theory & Viva Guide -->
+              <div class="coa-theory-card">
+                <div class="theory-header">
+                  <span class="theory-icon">📚</span>
+                  <h4>COA Architecture Reference &amp; Viva Insights</h4>
+                </div>
+                <div class="theory-grid">
+                  <div class="theory-box">
+                    <h5>3-Address Architecture</h5>
+                    <p class="theory-fmt">Format: <code>OP Dest, Src1, Src2</code></p>
+                    <p class="theory-desc">Employs 3 address fields per instruction. Destination and two sources are distinct. Requires fewer total instructions to evaluate expressions but instructions need more bits to encode registers.</p>
+                  </div>
+                  <div class="theory-box">
+                    <h5>2-Address Architecture</h5>
+                    <p class="theory-fmt">Format: <code>OP Dest, Src</code> (Dest = Dest OP Src)</p>
+                    <p class="theory-desc">One operand serves both as a source and the destination of the result. Requires a <code>MOV</code> instruction to preserve or initialize variables, striking a balance between instruction length and count.</p>
+                  </div>
+                  <div class="theory-box">
+                    <h5>1-Address Architecture</h5>
+                    <p class="theory-fmt">Format: <code>OP Operand</code> (Implicit Accumulator)</p>
+                    <p class="theory-desc">Uses a dedicated hardware register called the Accumulator (AC). All arithmetic operations are performed between AC and memory. Subexpressions must be stored in temporary memory locations (<code>STORE T1</code>).</p>
+                  </div>
+                  <div class="theory-box">
+                    <h5>0-Address Architecture</h5>
+                    <p class="theory-fmt">Format: <code>OP</code> (Implicit Stack Top)</p>
+                    <p class="theory-desc">Stack-based architecture (e.g. Burroughs B5000, JVM). Operands are implicitly popped from the Top of Stack (TOS) and the result is pushed back. Naturally evaluates postfix (Reverse Polish) notation with no memory addresses in arithmetic opcodes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           SECTION 4: GALLERY
+      =============================================== -->
+      <section id="gallery" class="page-section">
+        <div class="section-header">
+          <div class="section-tag">Proof &amp; Recognition</div>
+          <h2 class="section-title">Achievements &amp; Certifications Gallery</h2>
+          <p class="section-subtitle">
+            Verified academic honors, hackathon achievements, certifications, and memberships. Click any image to view in high resolution.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="gallery-filters" role="tablist">
+          <button class="filter-tab active" data-filter="all">All Items (8)</button>
+          <button class="filter-tab" data-filter="achievement">Achievements</button>
+          <button class="filter-tab" data-filter="certification">Certifications</button>
+          <button class="filter-tab" data-filter="academic">Academic Records</button>
+          <button class="filter-tab" data-filter="participation">Participation &amp; Memberships</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Gallery Item 1 -->
+          <div class="gallery-card" data-category="achievement" data-index="0">
+            <div class="gallery-img-wrap">
+              <img src="assets/gallery/gallery_1.png" alt="Integrated Green Mobility Ideathon 2026 - 3rd Position" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <span class="zoom-icon">🔍 View Full Image</span>
+              </div>
+              <span class="gallery-badge badge-achievement">Achievement</span>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">3rd Position in Ideathon (2026)</h4>
+              <p class="gallery-meta">Ignite Youth Club &amp; IKS, Chandigarh University • Feb 2026</p>
+              <p class="gallery-desc">Awarded Certificate of Achievement for securing 3rd position in Integrated Green Mobility Ideathon focusing on sustainable vehicles inspired by Indian Knowledge Systems.</p>
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="gallery-card" data-category="participation" data-index="1">
+            <div class="gallery-img-wrap">
+              <img src="assets/gallery/gallery_2.png" alt="Chandigarh University & ByteXL Build Summit" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <span class="zoom-icon">🔍 View Full Image</span>
+              </div>
+              <span class="gallery-badge badge-participation">Participation</span>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">Build Summit — Chandigarh University &amp; byteXL</h4>
+              <p class="gallery-meta">Chandigarh University &amp; byteXL • Certificate of Participation</p>
+              <p class="gallery-desc">Active team project participation and felicitation ceremony during the collaborative Build Summit initiative with byteXL.</p>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="gallery-card" data-category="participation" data-index="2">
+            <div class="gallery-img-wrap">
+              <img src="assets/gallery/gallery_3.png" alt="IEEE Student Member Card 2027" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <span class="zoom-icon">🔍 View Full Image</span>
+              </div>
+              <span class="gallery-badge badge-membership">Membership</span>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">IEEE Student Membership Card</h4>
+              <p class="gallery-meta">IEEE Delhi Section • Member #102661886 • Valid through Dec 2027</p>
+              <p class="gallery-desc">Official IEEE Student Membership credential for active participation in global technical conferences, IEEE Computer Society, and academic initiatives.</p>
+            </div>
+          </div>
+
+          <!-- Gallery Item 4 -->
+          <div class="gallery-card" data-category="certification" data-index="3">
+            <div class="gallery-img-wrap">
+              <img src="assets/gallery/gallery_4.png" alt="Microsoft Certified: Azure AI Fundamentals AI-900" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <span class="zoom-icon">🔍 View Full Image</span>
+              </div>
+              <span class="gallery-badge badge-certification">Certification</span>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">Microsoft Certified: Azure AI Fundamentals (AI-900)</h4>
+              <p class="gallery-meta">Microsoft • Issued April 28, 2026 • Certiport Verified</p>
+              <p class="gallery-desc">Official certification validating core machine learning, computer vision, natural language processing, and conversational AI workloads on Microsoft Azure cloud.</p>
+            </div>
+          </div>
+
+          <!-- Gallery Item 5 -->
+          <div class="gallery-card" data-category="academic" data-index="4">
+            <div class="gallery-img-wrap">
+              <img src="assets/gallery/gallery_5.png" alt="Chandigarh University CUIMS Academic Result - CGPA 9.67" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <span class="zoom-icon">🔍 View Full Image</span>
+              </div>
+              <span class="gallery-badge badge-academic">Academic Record</span>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">Chandigarh University CUIMS Transcript (CGPA 9.67)</h4>
+              <p class="gallery-meta">BE CSE (Artificial Intelligence) • UID: 25BAI10014</p>
+              <p class="gallery-desc">Official CUIMS semester performance verifying cumulative CGPA of 9.67 (Semester 1 SGPA: 9.65 | Semester 2 SGPA: 9.70) with A+ grades in core technical subjects.</p>
+            </div>
+          </div>
+
+          <!-- Gallery Item 6 -->
+          <div class="gallery-card" data-category="achievement" data-index="5">
+            <div class="gallery-img-wrap">
+              <img src="assets/gallery/gallery_6.png" alt="Ideathon 2026 Team Felicitation Ceremony" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <span class="zoom-icon">🔍 View Full Image</span>
+              </div>
+              <span class="gallery-badge badge-achievement">Achievement</span>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">Ideathon Team Felicitation Ceremony</h4>
+              <p class="gallery-meta">Campus Recognition • Ignite Youth Club &amp; IKS</p>
+              <p class="gallery-desc">Commemorative photograph of team members displaying Certificates of Achievement for the 3rd rank in Green Mobility Ideathon at Chandigarh University.</p>
+            </div>
+          </div>
+
+          <!-- Gallery Item 7 -->
+          <div class="gallery-card" data-category="participation" data-index="6">
+            <div class="gallery-img-wrap">
+              <img src="assets/gallery/gallery_7.png" alt="HERizon 2026 Certificate of Participation" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <span class="zoom-icon">🔍 View Full Image</span>
+              </div>
+              <span class="gallery-badge badge-participation">Participation</span>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">Active Participant — HERizon 2026</h4>
+              <p class="gallery-meta">UIE Chandigarh University &amp; IEEE India Council • March 2026</p>
+              <p class="gallery-desc">Awarded Certificate of Participation for actively participating in HERizon 2026 (Women in Tech Initiative) organized by University Institute of Engineering &amp; IEEE India Council.</p>
+            </div>
+          </div>
+
+          <!-- Gallery Item 8 -->
+          <div class="gallery-card" data-category="certification" data-index="7">
+            <div class="gallery-img-wrap">
+              <img src="assets/gallery/gallery_8.png" alt="Microsoft Certified: Azure Fundamentals AZ-900" loading="lazy">
+              <div class="gallery-hover-overlay">
+                <span class="zoom-icon">🔍 View Full Image</span>
+              </div>
+              <span class="gallery-badge badge-certification">Certification</span>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">Microsoft Certified: Azure Fundamentals (AZ-900)</h4>
+              <p class="gallery-meta">Microsoft • Issued November 19, 2025 • Certiport Verified</p>
+              <p class="gallery-desc">Demonstrates foundational knowledge of cloud services, security, privacy, compliance, and core Azure architectural components.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           SECTION 5: ASSIGNMENT-1
+      =============================================== -->
+      <section id="assignment" class="page-section">
+        <div class="section-header">
+          <div class="section-tag">Coursework Submission</div>
+          <h2 class="section-title">COA Assignment-1</h2>
+          <p class="section-subtitle">
+            Computer Organisation and Architecture assignment submitted to Dr. Ruchika Gupta, Chandigarh University.
+          </p>
+        </div>
+
+        <div class="assignment-container">
+          <!-- Main Assignment Overview Card -->
+          <div class="assignment-hero-card">
+            <div class="assignment-details-col">
+              <div class="assignment-badge">Academic Submission</div>
+              <h3 class="assignment-doc-title">Computer Organisation and Architecture Assignment-1</h3>
+              <p class="assignment-doc-desc">
+                View my Computer Organisation and Architecture Assignment-1. Contains in-depth technical answers on modern processor architectures, cloud data centers, GPUs vs CPUs, TPUs, hardware specifications, and fundamental computing concepts.
+              </p>
+
+              <div class="assignment-meta-grid">
+                <div class="asg-meta-item">
+                  <span class="asg-label">Student Name:</span>
+                  <span class="asg-val">Hiteshi Kadian</span>
+                </div>
+                <div class="asg-meta-item">
+                  <span class="asg-label">UID / Section:</span>
+                  <span class="asg-val">25BAI10014 • Section 25BAI601</span>
+                </div>
+                <div class="asg-meta-item">
+                  <span class="asg-label">Submitted To:</span>
+                  <span class="asg-val">Dr. Ruchika Gupta</span>
+                </div>
+                <div class="asg-meta-item">
+                  <span class="asg-label">Document:</span>
+                  <span class="asg-val">COA_Assignment_1.pdf (5 Pages)</span>
+                </div>
+              </div>
+
+              <div class="assignment-cta-row">
+                <a href="assets/assignment/COA_Assignment_1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="openAssignmentBtn">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Open Assignment PDF in New Tab
+                </a>
+                <a href="assets/assignment/COA_Assignment_1.pdf" download="COA_Assignment_1_Hiteshi.pdf" class="btn btn-secondary">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  Download PDF
+                </a>
+              </div>
+            </div>
+
+            <div class="assignment-preview-col">
+              <div class="doc-icon-graphic">
+                <span class="doc-badge-pdf">PDF</span>
+                <div class="doc-page-lines">
+                  <div class="line l1"></div>
+                  <div class="line l2"></div>
+                  <div class="line l3"></div>
+                  <div class="line l4"></div>
+                </div>
+                <span class="doc-sub-tag">5 Pages • Complete</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded PDF Viewer with Fallback -->
+          <div class="pdf-viewer-card">
+            <div class="viewer-header">
+              <div class="viewer-title">
+                <span class="viewer-dot red"></span>
+                <span class="viewer-dot yellow"></span>
+                <span class="viewer-dot green"></span>
+                <span class="viewer-filename">COA_Assignment_1.pdf</span>
+              </div>
+              <div class="viewer-actions">
+                <a href="assets/assignment/COA_Assignment_1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">
+                  Fullscreen
+                </a>
+              </div>
+            </div>
+
+            <div class="pdf-frame-wrapper" id="pdfFrameWrapper">
+              <iframe 
+                src="assets/assignment/COA_Assignment_1.pdf" 
+                title="COA Assignment-1 PDF Document" 
+                class="pdf-iframe" 
+                id="assignmentIframe"
+              ></iframe>
+              <div class="pdf-fallback-message hidden" id="pdfFallbackMsg">
+                <div class="fallback-icon">📄</div>
+                <h4>PDF Preview Unavailable</h4>
+                <p>If the PDF does not display directly inside your browser's frame, click below to open the file directly:</p>
+                <a href="assets/assignment/COA_Assignment_1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  Open COA_Assignment_1.pdf
+                </a>
+                <p class="fallback-hint">Path: <code>assets/assignment/COA_Assignment_1.pdf</code></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Syllabus & Viva Topic Quick-Study Accordion -->
+          <div class="assignment-topics-card">
+            <div class="card-heading">
+              <span class="badge-icon">📖</span>
+              <h3>Key Topics Covered in Assignment-1 (Quick Viva Reference)</h3>
+            </div>
+            <div class="topics-accordion" id="assignmentTopics">
+              <!-- Topic 1 -->
+              <details class="topic-item">
+                <summary class="topic-summary">
+                  <span class="topic-num">Q1–Q4</span>
+                  <span class="topic-name">Yotta Data Center, NPTEL, AI Robots, &amp; Raspberry Pi</span>
+                  <span class="topic-chevron">▼</span>
+                </summary>
+                <div class="topic-content">
+                  <p><strong>Yotta:</strong> Indian hyperscale cloud infrastructure and data center provider focusing on low-energy data centers, AI workloads, and disaster recovery.</p>
+                  <p><strong>Raspberry Pi:</strong> Credit-card-sized low-cost single-board computer (ARM-based) designed to foster programming and IoT robotics education.</p>
+                </div>
+              </details>
+
+              <!-- Topic 2 -->
+              <details class="topic-item">
+                <summary class="topic-summary">
+                  <span class="topic-num">Q6–Q7</span>
+                  <span class="topic-name">CPU vs. GPU vs. TPU Architecture Matrix</span>
+                  <span class="topic-chevron">▼</span>
+                </summary>
+                <div class="topic-content">
+                  <div class="table-responsive">
+                    <table class="compact-table">
+                      <thead>
+                        <tr><th>Feature</th><th>CPU</th><th>GPU</th><th>TPU</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Full Form</td><td>Central Processing Unit</td><td>Graphics Processing Unit</td><td>Tensor Processing Unit</td></tr>
+                        <tr><td>Primary Focus</td><td>Sequential &amp; General computing</td><td>High-throughput parallel processing</td><td>Specialized Matrix Multiplications for AI</td></tr>
+                        <tr><td>Core Layout</td><td>Few powerful latency-optimized cores</td><td>Thousands of smaller throughput cores</td><td>Systolic array matrix processing units</td></tr>
+                        <tr><td>Ideal For</td><td>Operating systems, general logic</td><td>Gaming, 3D graphics, model training</td><td>Deep learning inference &amp; neural training</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </details>
+
+              <!-- Topic 3 -->
+              <details class="topic-item">
+                <summary class="topic-summary">
+                  <span class="topic-num">Q8–Q10</span>
+                  <span class="topic-name">Personal Computer Hardware Specs &amp; CPU Organization</span>
+                  <span class="topic-chevron">▼</span>
+                </summary>
+                <div class="topic-content">
+                  <p><strong>Processor:</strong> Intel Core i7 (x64 / 64-bit architecture)</p>
+                  <p><strong>RAM:</strong> 32.0 GB DDR5 running at 5600 MT/s</p>
+                  <p><strong>Operating System:</strong> Microsoft Windows 11 64-bit</p>
+                  <p><strong>Industry Founders:</strong> Intel was founded by Gordon Moore and Robert Noyce; AMD by Jerry Sanders &amp; 7 co-founders.</p>
+                </div>
+              </details>
+
+              <!-- Topic 4 -->
+              <details class="topic-item">
+                <summary class="topic-summary">
+                  <span class="topic-num">Q11–Q13</span>
+                  <span class="topic-name">Stampeding Herd Problem, India AI Summit 2026 &amp; The Imitation Game</span>
+                  <span class="topic-chevron">▼</span>
+                </summary>
+                <div class="topic-content">
+                  <p><strong>Stampeding Herd Problem:</strong> Occurs when numerous concurrent threads/processes simultaneously wait on a single shared resource; upon availability, all wake up at once, saturating the CPU and degrading throughput (analogous to all students rushing into a classroom simultaneously).</p>
+                  <p><strong>The Imitation Game:</strong> Reflections on Alan Turing's perseverance, cryptographic innovation, and the indispensable power of collaborative teamwork in solving monumental engineering challenges.</p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="app-footer">
+        <div class="footer-container">
+          <div class="footer-left">
+            <p class="footer-brand">Hiteshi Kadian • COA Learning Portfolio</p>
+            <p class="footer-sub">Bachelor of Engineering in Computer Science (Artificial Intelligence) • Chandigarh University</p>
+          </div>
+          <div class="footer-right">
+            <span class="footer-tag">UID: 25BAI10014</span>
+            <span class="footer-tag">Subject: Computer Organisation and Architecture</span>
+            <a href="#home" class="back-to-top" id="backToTopBtn" title="Back to top">↑ Top</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- ==============================================
+       GALLERY LIGHTBOX MODAL
+  =============================================== -->
+  <div class="gallery-modal" id="galleryModal" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close image modal">✕</button>
+      
+      <button class="modal-nav-btn prev-btn" id="modalPrevBtn" aria-label="Previous image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+
+      <div class="modal-body">
+        <div class="modal-image-container">
+          <img src="" alt="" class="modal-full-img" id="modalImg">
+        </div>
+        <div class="modal-caption-bar">
+          <div class="modal-caption-text">
+            <div class="modal-badge-row">
+              <span class="modal-category-badge" id="modalCategory">Category</span>
+              <span class="modal-counter" id="modalCounter">1 / 8</span>
+            </div>
+            <h3 class="modal-title" id="modalTitle">Title</h3>
+            <p class="modal-meta" id="modalMeta">Meta</p>
+            <p class="modal-desc" id="modalDesc">Description</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="modal-nav-btn next-btn" id="modalNextBtn" aria-label="Next image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toastNotification" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toastMessage">Copied!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
